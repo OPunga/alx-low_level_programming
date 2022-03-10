@@ -3,8 +3,10 @@
 /**
  * main -prints the phrase with proper grammer,
  * but the outcome is a piece of art,
- * Return: 0 if exited properly, a non-zero otherwise
+ * Return: 0 if exited properly, non-zero otherwise
  */
 int main(void)
+{
 	printf("with proper grammer,but the outside is a piece of art,\n");
-	return(0);
+	return (0);
+}	
