@@ -1,9 +1,9 @@
 #include <stdlib.h>
 
 /**
- * main - main block
- * Description: Use `putchar` function to print the alphabet in lowercase.
- * Return: 0
+ * main - prints the alphabet in lower case,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
