@@ -1,4 +1,5 @@
 #include <stdlib.h>
+
 /**
  * main - main block
  * Description: Use `putchar` function to print the alphabet in lowercase.
@@ -6,14 +7,10 @@
  */
 int main(void)
 {
-	char c = 'a';
+	int ch;
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
 	putchar('\n');
-
 	return (0);
 }
