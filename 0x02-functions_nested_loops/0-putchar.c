@@ -1,21 +1,20 @@
-#include <unistd.h>
 #include "main.h"
-
 /**
- * main - Prints main as a message. 
- *
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Description: prints '_putchar \n'
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int str[] = {72, 111. 108, 98,101, 114, 116, 111, 110};
-	int count, sz;
+	char str[] = "_putchar\n";
+	int i = 0;
 
-	sz = sizeof(str) /sizeof(int);
-	for (count = 0; count < sz; count++)
+	while (str[i] != '\0')
 	{
-		_putchar(str[count]);
+		char c = str[i];
+
+		_putchar(c);
+		i++;
 	}
-	_putchar('\n');
 	return (0);
 }
