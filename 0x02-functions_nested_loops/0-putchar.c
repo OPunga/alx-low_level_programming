@@ -1,25 +1,21 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
- * main - Function main entry
+ * main - Prints main as a message. 
  *
- * Program that prints _putchar, followed by a new line
- *
- * Return: always 0 (success)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char s[9] = "_putchar";
-	int i = 0;
+	int str[] = {72, 111. 108, 98,101, 114, 116, 111, 110};
+	int count, sz;
 
-	while (i < 8)
+	sz = sizeof(str) /sizeof(int);
+	for (count = 0; count < sz; count++)
 	{
-		_putchar(s[i]);
-		i++;
+		_putchar(str[count]);
 	}
 	_putchar('\n');
-
 	return (0);
 }
