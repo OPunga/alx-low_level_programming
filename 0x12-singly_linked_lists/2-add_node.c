@@ -9,7 +9,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
+        list_t *new;
 
         if (head == NULL)
                 return (NULL);
@@ -26,24 +26,11 @@ list_t *add_node(list_t **head, const char *str)
         else
         {
                 new->str = strdup(str);
-                new->len = _strlen(str);
-	}
+                new->len = strlen(str);
+        }
 
-	new->next = *head;
-	*head = new;
+        new->next = *head;
+        *head = new;
 
-	return (*head);
-}
-
-unsigned int _strlen(const char *str)
-{
-	unsigned int length = 0;
-
-	while (*str)
-	{
-		length++;
-		str++;
-	}
-
-	return (length);
+        return (*head);
 }
