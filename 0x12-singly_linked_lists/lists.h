@@ -23,6 +23,7 @@ typedef struct list_s
 unsigned int _strlen(const char *str);
 size_t print_list(const list_t *h);
 void print_text(void)  __attribute__ ((constructor));
+size_t list_len(const list_t *h);
 
 #endif
 
