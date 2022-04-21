@@ -1,5 +1,4 @@
 # Singly linked lists
---
 
 **Learning Objectives**
 
