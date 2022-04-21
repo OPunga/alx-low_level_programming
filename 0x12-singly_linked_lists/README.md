@@ -1,7 +1,7 @@
 # Singly linked lists
 
 **Learning Objectives**
-
+--
 -When and why using a linked list vs arrays
 
 -How to build and use linked list
